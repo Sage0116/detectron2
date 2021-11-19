@@ -1,0 +1,43 @@
+_BASE_: "./Base-RCNN-FPN.yaml"
+DATASETS:
+  SOURCE_DOMAIN:
+    TRAIN: ("cityscape_trainval",)
+  TARGET_DOMAIN:
+    TRAIN: ("foggycity_trainval",)
+  TEST: ("foggycity_test",)
+MODEL:
+  META_ARCHITECTURE: "SWDARCNN"
+  BACKBONE:
+    NAME: "build_resnet_fpn_da_backbone"
+    FREEZE_AT: 1
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+  KEYPOINT_ON: False
+  MASK_ON: False
+  DOMAIN_ADAPTATION_ON: True
+  ROI_HEADS:
+    NAME: "DAROIHeads"
+    IN_FEATURES: ["p2", "p3", "p4", "p5"]
+    NUM_CLASSES: 8
+    CONTEXT_REGULARIZATION_FEATURES: ['local_head_feature', 'global_head_feature']
+    CONTEXT_REGULARIZATION_ON: True
+  ROI_BOX_HEAD:
+    FC_DIM: 128
+  DA_HEADS:
+    LOCAL_ALIGNMENT_ON: True
+    GLOBAL_ALIGNMENT_ON: True
+    GAMMA: 5.0
+SOLVER:
+  IMS_PER_BATCH: 4 # batch size
+  LR_SCHEDULER_NAME: WarmupCosineLR
+  STEPS: (50000, )
+  WARMUP_ITERS: 500
+  BASE_LR: 0.001
+  MAX_ITER: 70000
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0
+  CHECKPOINT_PERIOD: 5000
+TEST:
+  EVAL_PERIOD: 10000
+

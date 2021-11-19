@@ -1,0 +1,1991 @@
+[33mcommit 60238942430095e7379dd7eb691b029e8169e5ad[m
+Author: sqzhang <sqzhang1999@gmail.com>
+Date:   Fri Nov 19 16:51:55 2021 +0800
+
+    first commit
+
+[33mcommit d1e04565d3bec8719335b88be9e9b961bf3ec464[m
+Author: Yuxin Wu <ppwwyyxx@users.noreply.github.com>
+Date:   Mon Oct 25 19:09:41 2021 -0700
+
+    torch1.10 + 0.6 release
+    
+    Summary: Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3606
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D31884438
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 015da5b4e612a6eeaee9a92be7878770c7836156
+
+[33mcommit a24729abd7a08aa29b453e1754779004807fc8ee[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Oct 22 00:46:54 2021 -0700
+
+    add torch1.10 to CI
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31853130
+    
+    fbshipit-source-id: 749767cb24e88018ec3a613295d56f5c9d4b1899
+
+[33mcommit e98998d87d6bb9502fefae0a904aa60ba1398e13[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Oct 21 20:58:02 2021 -0700
+
+    Add reduce_param_groups to D2
+    
+    Summary: this utility function was added in D30272112 and is useful to all D2 (https://github.com/facebookresearch/detectron2/commit/11528ce083dc9ff83ee3a8f9086a1ef54d2a402f) users as well
+    
+    Differential Revision: D31833523
+    
+    fbshipit-source-id: 0adfc612adb8b448fa7f3dbec1b1278c309554c5
+
+[33mcommit b101248ada9b26900b4e0b4c9d4d93f31f2535f5[m
+Author: Ranuga-Disansa <79456372+Programmer-RD-AI@users.noreply.github.com>
+Date:   Thu Oct 21 09:13:59 2021 -0700
+
+    Fix for FileNotFoundError 'output/metrics.json'
+    
+    Summary:
+    FileNotFoundError: [Errno 2] No such file or directory: 'output/metrics.json'
+    
+    Thanks for your contribution!
+    
+    https://github.com/facebookresearch/detectron2/issues/3587
+    
+    With best regards,
+    Ranuga
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3588
+    
+    Differential Revision: D31789957
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: d5c81a81425cbefef7154aaa52d6e38cfa796385
+
+[33mcommit ea3a8f8ed3a84cd8a43a6cb4d00f4c277bd69377[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Oct 20 13:23:04 2021 -0700
+
+    fix BitMasks indexing
+    
+    Summary: fix https://github.com/facebookresearch/detectron2/issues/3591
+    
+    Differential Revision: D31771140
+    
+    fbshipit-source-id: cefca0b49e9b061fe45be6bc6d34ed8e1853c7fa
+
+[33mcommit 8a1589efc7c4ffb9d67e7c0c3930daa23aa39416[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Oct 19 12:30:15 2021 -0700
+
+    fix doc build
+    
+    Summary: follow up of D31575602 (https://github.com/facebookresearch/detectron2/commit/0e29b7ab8b77860b397aa02c2a164e1a8edcea8b)
+    
+    Differential Revision: D31733407
+    
+    fbshipit-source-id: f367fbcfd6764278bc263982159dac531e15c670
+
+[33mcommit f18e997b61abd579379fd47196c34116284776e2[m
+Author: Pyre Bot Jr <>
+Date:   Mon Oct 18 21:24:29 2021 -0700
+
+    suppress errors in `vision/fair/detectron2/projects/DensePose`
+    
+    Differential Revision: D31749443
+    
+    fbshipit-source-id: 4cdb0051f3a2bf298f96110a642e7ec1fe869fdc
+
+[33mcommit 6199cfedf5cc51c560fdc3c6dc5d3e26d9d560b1[m
+Author: tkhe <violin1229@163.com>
+Date:   Mon Oct 18 09:55:15 2021 -0700
+
+    fix f-string
+    
+    Summary: Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3554
+    
+    Differential Revision: D31717872
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 5951562fc2f06526012c5fc5e73724ee571c86f7
+
+[33mcommit dfe8d368c8b7cc2be42c5c3faf9bdcc3c08257b1[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Oct 15 14:19:40 2021 -0700
+
+    domain-specific BN in retinanet
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D31630633
+    
+    fbshipit-source-id: e91d0302ea2c0d24dee0e50babc0679b92a87cd7
+
+[33mcommit 31ec19b3132a3ac609600802dd37b2b40a76b5c9[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Oct 14 02:13:12 2021 -0700
+
+    implement FCOS
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30754542
+    
+    fbshipit-source-id: 7b35e4250e31e8a999b8b4b45b002c7fce0773ac
+
+[33mcommit 0e29b7ab8b77860b397aa02c2a164e1a8edcea8b[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Oct 13 21:07:40 2021 -0700
+
+    drop support for pytorch 1.7
+    
+    Summary: changes in preparation for pytorch 1.10
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31575602
+    
+    fbshipit-source-id: 95fa947aafa201386901ad5a6ff2726b0a43dcff
+
+[33mcommit efd8f4d9e396ac8981dfd528ccc93233cfadf5d9[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Oct 13 16:40:19 2021 -0700
+
+    generalized dense detector base
+    
+    Reviewed By: zhanghang1989, wat3rBro
+    
+    Differential Revision: D30721780
+    
+    fbshipit-source-id: eeefca099c4eb158d59f697f4e4a1419dc69a806
+
+[33mcommit 0e76e35c0ff354153a9c9c1e3a93e7d176fc8d67[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Oct 12 12:34:37 2021 -0700
+
+    scripting support for Instances.cat and Instances.__init__(with arguments)
+    
+    Summary: needed for single stage detector refactoring
+    
+    Reviewed By: newstzpz
+    
+    Differential Revision: D30977541
+    
+    fbshipit-source-id: b596a9996d98caf538a22c8e2e191d4039d013b6
+
+[33mcommit 592128b48d2c4cf5963720d6569857d583f43deb[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Oct 12 04:45:48 2021 -0700
+
+    Add find_unused_parameters
+    
+    Summary: can be called when DDP fails to check what params cause the failure
+    
+    Differential Revision: D31463117
+    
+    fbshipit-source-id: c12b6c82f16916d4ff9175f2d93d951d4f313350
+
+[33mcommit 0e6702d8c5589f434efb054400869826b5218956[m
+Author: SamFC10 <njebastin10@gmail.com>
+Date:   Tue Oct 12 03:15:30 2021 -0700
+
+    Added diou and ciou losses for bbox regression
+    
+    Summary:
+    Resolves https://github.com/facebookresearch/detectron2/issues/1085
+    
+    references and credits:
+    https://github.com/Zzh-tju/DIoU-pytorch-detectron/blob/master/lib/utils/net.py
+    https://github.com/facebookresearch/fvcore/blob/master/fvcore/nn/giou_loss.py
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3481
+    
+    Test Plan: sandcastle
+    
+    Differential Revision: D31463505
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 04d815f979b589b7e3b3e5d9c55eab318762efe8
+
+[33mcommit 7f8f29deae278b75625872c8a0b00b74129446ac[m
+Author: puhuk <wetr235@gmail.com>
+Date:   Thu Oct 7 12:58:21 2021 -0700
+
+    Update benchmarks.md (PR about issue #3528)
+    
+    Summary:
+    PR about issue https://github.com/facebookresearch/detectron2/issues/3528
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3529
+    
+    Differential Revision: D31200753
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 84954c59c72ebb0c493c4aa6cbff60befd13e6b2
+
+[33mcommit ecc0856063857176f60b998dd43afed79840f1da[m
+Author: Wenliang Zhao <wenliangzhao@fb.com>
+Date:   Thu Oct 7 10:57:31 2021 -0700
+
+    add color field in instances and visualize based on preset colors
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3549
+    
+    Currently D2 (https://github.com/facebookresearch/detectron2/commit/11528ce083dc9ff83ee3a8f9086a1ef54d2a402f) and D2 (https://github.com/facebookresearch/detectron2/commit/11528ce083dc9ff83ee3a8f9086a1ef54d2a402f)GO uses a box IoU based method to assign id and color for each instance. It is useful but not flexible. This diff allows user to define their own preset colors for each instance. By doing this, some advanced tracking method can be applied before get into the Visualizer.
+    
+    Reviewed By: FCChen
+    
+    Differential Revision: D31366663
+    
+    fbshipit-source-id: e04d26475c2935439a045e96c28f4391e21d40f1
+
+[33mcommit f5e4c452bba854b8ed14a7240f51720ca7857e91[m
+Author: Pyre Bot Jr <>
+Date:   Tue Oct 5 22:42:35 2021 -0700
+
+    suppress errors in `fbcode/vision` - batch 1
+    
+    Differential Revision: D31424068
+    
+    fbshipit-source-id: c30be53de903170265a200c6c874d4fefbcf8b0b
+
+[33mcommit 1b567dadd4d3a923092fd6e063117d914ae4ce37[m
+Author: Yue (R) Zhao <yzhao30@fb.com>
+Date:   Tue Oct 5 17:43:40 2021 -0700
+
+    add check_consistency to get_detection_dataset_dicts
+    
+    Summary: Add the parameter to skip the consistency check
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D31404411
+    
+    fbshipit-source-id: 4d6da16906fad345df7ed99371c6b2a04a6257b9
+
+[33mcommit c55d3816c52f22bb2d7cbe4d08a2e760cf6b8e31[m
+Author: Wenliang Zhao <wenliangzhao@fb.com>
+Date:   Fri Oct 1 15:51:47 2021 -0700
+
+    add cpp wrapper for QVE
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3525
+    
+    Add c++ wrapper for instance segmentation
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31049697
+    
+    fbshipit-source-id: 37db567468d1a72f73d3f8834684895e18666f0b
+
+[33mcommit f64c764aeeffcca20d30fef2cc12e5f54bfa5944[m
+Author: Hanzi Mao <hannamao@fb.com>
+Date:   Thu Sep 30 16:44:08 2021 -0700
+
+    Make benchmark tool works for py config files for eval task
+    
+    Summary: Make benchmark tool works for py config files for eval task
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D31289374
+    
+    fbshipit-source-id: 0d758cf3fb7aeccc18eb383e4236bd4203289ef4
+
+[33mcommit 2df9c7dae3828306d63764f897d748c0cfe278ba[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Sep 30 14:09:41 2021 -0700
+
+    WEIGHT_DECAY_BIAS should be unset by default, use None
+    
+    Reviewed By: newstzpz
+    
+    Differential Revision: D31284136
+    
+    fbshipit-source-id: 23603278472d3aa375295efc0d4922f63b296499
+
+[33mcommit 824b3a5ce19fd5e4c4aa3cf60ea5e861828322d0[m
+Author: Hanzi Mao <hannamao@fb.com>
+Date:   Thu Sep 30 12:55:16 2021 -0700
+
+    Make benchmark for training work with multiple gpus
+    
+    Summary:
+    1. For tensorboard_trace_handler, ``worker_name`` should be unique for each worker in distributed scenario.
+    2. Turn off saving `profiler-trace-iter{}.json` in the output dir when `save_tensorboard=True` as it seems like we cannot have both enabled right now (discussions are here https://fb.workplace.com/groups/289111155699012/permalink/640990860511038/)
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D31312437
+    
+    fbshipit-source-id: b50d80c9f288a35483d9a41ce07e0307c15c297f
+
+[33mcommit 9f8d35e653674932fbe7a579feee36ed9dc8e8c5[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Sep 29 14:03:10 2021 -0700
+
+    add shapes_to_tensor that stacks scalars or ints in a traceable/scriptable way
+    
+    Summary: The function is reused in 3 different places.
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30527464
+    
+    fbshipit-source-id: 90b0fdbabd296ba5f4d911a8481c7c454b947b7b
+
+[33mcommit fb2f17bcff424a9cd01e5cb32c3866fff35e3893[m
+Author: Artsiom Sanakoyeu <asanakoy@fb.com>
+Date:   Wed Sep 29 08:49:59 2021 -0700
+
+    Fix distributed inference sampler, do not create empty loaders if possible
+    
+    Summary: Distribute sampleas acrsoss workers as even as posible. This prevents empty loaders in most of the cases.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30777719
+    
+    fbshipit-source-id: 255596271198885d95111a08d84ebf6f3587fd3a
+
+[33mcommit 861b50a8894a7b3cccd5e4a927a4130e8109f7b8[m
+Author: NeelayS <shahnh19@gmail.com>
+Date:   Tue Sep 28 17:58:50 2021 -0700
+
+    Fixes typo in LazyConfigs tutorial
+    
+    Summary:
+    Fix for https://github.com/facebookresearch/detectron2/issues/3503
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3504
+    
+    Reviewed By: sstsai-adl
+    
+    Differential Revision: D31128158
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 6b5a2b10d95b0cf567a940d0fcece3cb02685976
+
+[33mcommit 9fb31b378d50212652cf383f3da76a923d7cc8e9[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Sep 28 17:57:52 2021 -0700
+
+    fix sem_seg inference without "height" and "width"
+    
+    Summary: fix https://github.com/facebookresearch/detectron2/issues/3491
+    
+    Reviewed By: sstsai-adl
+    
+    Differential Revision: D31061615
+    
+    fbshipit-source-id: 1080687340721a31d3689ea5b2450eef891e6e33
+
+[33mcommit 0316cb7ecf00ebf8f8162445b224de225ce9033f[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Sep 28 09:42:12 2021 -0700
+
+    support registering a dataset object; support customizing collate_fn
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31201334
+    
+    fbshipit-source-id: 38928aa0eec0749af1edd10f40383257b29bec3c
+
+[33mcommit 0a2a4a3efbe1832986195bffcc6e16e2997a8277[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Sep 28 09:42:12 2021 -0700
+
+    support iterable dataset in build_detection_test_loader
+    
+    Summary: Like D24677397 (https://github.com/facebookresearch/detectron2/commit/05bc8439ca10e11300d9d34e4fe0dd1d3f42773a), but for test loader
+    
+    Differential Revision: D31161853
+    
+    fbshipit-source-id: 6c101843a2be681fc23b2ff241070876a77be80f
+
+[33mcommit 2a1cec4c647dbe8a05f2d5b599d7d4c7cf9f04ad[m
+Author: Bowen Cheng <bowenc0221@gmail.com>
+Date:   Sat Sep 25 00:11:30 2021 -0700
+
+    support using bitmask with LSJ
+    
+    Summary:
+    `polygons_to_bitmask` fails with empty polygon which could happen with LSJ.
+    
+    Pull Request resolved: https://github.com/fairinternal/detectron2/pull/564
+    
+    Reviewed By: HannaMao
+    
+    Differential Revision: D31181422
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 5f955e04518bae153401df0760840f5daf0da66a
+
+[33mcommit be945b33e69058784fec8fd5f8b1b5cd7f8adc4d[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Sep 24 19:48:39 2021 -0700
+
+    remove caffe2-export of panopticfpn
+    
+    Summary: Caffe2 export should be deprecated. Start from the least used model.
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D31038278
+    
+    fbshipit-source-id: 18fd26942dd35f3a542f2da1e593b6c629a22ba1
+
+[33mcommit 730ccefc7794bd2db0558128c341babdf328e104[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Sep 20 15:18:59 2021 -0700
+
+    let LazyCall support dataclasses
+    
+    Summary: it was unsupported due to omegaconf
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30753898
+    
+    fbshipit-source-id: d47b014bdc806023ebc95364359d8695865cd3c7
+
+[33mcommit a8b8aa3f4a0cde2f56aa5692693b7f903d688e94[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Sep 20 11:44:32 2021 -0700
+
+    config: warning when the dumped yaml is invalid
+    
+    Summary: if dumped yaml is unloadable, print warning and save a pkl
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30975516
+    
+    fbshipit-source-id: c2eb839c9ffcdee7951d78b01e5c10939debec77
+
+[33mcommit d6a5e64ac34c1f1f1cbf470b95db7d7cd19dd5d0[m
+Author: puhuk <wetr235@gmail.com>
+Date:   Mon Sep 20 11:40:30 2021 -0700
+
+    Update document (training.md)
+    
+    Summary:
+    Correct typo
+    standarized -> standardized
+    Regarding issue https://github.com/facebookresearch/detectron2/issues/3467
+    
+    Thanks for your contribution!
+    
+    If you're sending a large PR (e.g., >100 lines),
+    please open an issue first about the feature / bug, and indicate how you want to contribute.
+    
+    We do not always accept features.
+    See https://detectron2.readthedocs.io/notes/contributing.html#pull-requests about how we handle PRs.
+    
+    Before submitting a PR, please run `dev/linter.sh` to lint the code.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3468
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31052099
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 4128566943cfa54fcebd357d6c1a1f9dda70a7da
+
+[33mcommit 5b2985007a82f0a29498b883b841253e2c2ca1e9[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Sep 20 11:36:04 2021 -0700
+
+    set default pre-trained model to empty
+    
+    Summary: Empty is a better default
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30980361
+    
+    fbshipit-source-id: 9ad2bde6b9d9462ccf7cf953c33894a0c0279ad1
+
+[33mcommit 7c2173b282effcc85bfd633f84dc66550b91e164[m
+Author: Jordan Bonecutter <34787245+jordan-bonecutter@users.noreply.github.com>
+Date:   Mon Sep 20 10:55:07 2021 -0700
+
+    Fix typo (provid -> provide)
+    
+    Summary:
+    Thanks for your contribution!
+    
+    If you're sending a large PR (e.g., >100 lines),
+    please open an issue first about the feature / bug, and indicate how you want to contribute.
+    
+    We do not always accept features.
+    See https://detectron2.readthedocs.io/notes/contributing.html#pull-requests about how we handle PRs.
+    
+    Before submitting a PR, please run `dev/linter.sh` to lint the code.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3476
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31052262
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: d1f7ab357ce48e4d7735e024d6441a96b863bd71
+
+[33mcommit 8b380971a38300ccfc10a0499dfd1306c6427e0e[m
+Author: Sukjun Hwang <sj.hwang@yonsei.ac.kr>
+Date:   Mon Sep 20 10:53:45 2021 -0700
+
+    Fix reduction of cross_entropy
+    
+    Summary:
+    Reduction of cross_entropy is always set to "mean".
+    Fixed to receive the reduction.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3454
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D31052191
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 0bd992cac13c67a772fac8539ab5cc4f7c8e5c3c
+
+[33mcommit 018fca8f33281dda4e51fdc211a8e7563dd71e23[m
+Author: Jon Morton <jamorton@fb.com>
+Date:   Thu Sep 16 17:22:23 2021 -0700
+
+    Visualizer: make keypoint threshold configurable
+    
+    Summary: Make the keypoint threshold a class member, so it can be changed.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30690598
+    
+    fbshipit-source-id: 29499eaf12257e5bb4871ea318dc4ab5523d304e
+
+[33mcommit 6545979631eb96144a415609c48f9a32a8aeb3e2[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Sep 15 18:42:46 2021 -0700
+
+    fix ColorMode.IMAGE_BW of visualizer
+    
+    Summary: fix https://github.com/facebookresearch/detectron2/issues/3486
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30974958
+    
+    fbshipit-source-id: 68c7d041f3b5b64eb0c32b4fcc99ad6d13e3542f
+
+[33mcommit ce5b1c5afe93919d14adf0fef27d608300a5171e[m
+Author: Xiaoliang Dai <xiaoliangdai@fb.com>
+Date:   Tue Sep 14 18:44:11 2021 -0700
+
+    Fix the coco_evaluation for keypoints
+    
+    Summary: Fix the keypoint evaluation pipeline.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30904414
+    
+    fbshipit-source-id: ef8bff166fccf2ef059013ae97ff119f8a9b4df0
+
+[33mcommit 23f61b8b5188cc9be048778cacf2e4855e62206d[m
+Author: Siddharth Shah <siddshah@fb.com>
+Date:   Mon Sep 13 13:16:36 2021 -0700
+
+    pre compute trimap weights
+    
+    Summary:
+    Pre-computing trimap weights avoids unnecessary CPU <--> GPU copy during
+    loss calculation and leads to 45% training speed up. In addition to that, this
+    also brings accuracy improvements. For xirp17e res 160 Portal model
+    pre-computing trimap weights got +0.7 IOU, +1.2 B-IOU and +0.2 BT-IOU. Note
+    that the Portal model still uses the trimap computation and not boundary loss.
+    In fact, for xirp17e boundary loss did not show additional gains compared to
+    trimap.
+    
+    Reviewed By: wenliangzhao2018
+    
+    Differential Revision: D30200036
+    
+    fbshipit-source-id: 4e6c5f022b341757c93678e81d73d2e8c259b43a
+
+[33mcommit 5c923c64c4f4f79a8b1f265be4b6d9d8512b5793[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Sep 9 17:08:11 2021 -0700
+
+    support creating bitmasks from empty polygons
+    
+    Reviewed By: HannaMao
+    
+    Differential Revision: D30795434
+    
+    fbshipit-source-id: 7a841e0f980f6c8ff40411acff9c732a53ac2c3b
+
+[33mcommit f88b04f973fb5bdd70944b85f720cd23b5caca21[m
+Author: puhuk <wetr235@gmail.com>
+Date:   Wed Sep 8 10:59:20 2021 -0700
+
+    Correct typo
+    
+    Summary:
+    Correct typo
+    to to swap -> to swap
+    Regarding issue https://github.com/facebookresearch/detectron2/issues/3458
+    
+    Thanks for your contribution!
+    
+    If you're sending a large PR (e.g., >100 lines),
+    please open an issue first about the feature / bug, and indicate how you want to contribute.
+    
+    We do not always accept features.
+    See https://detectron2.readthedocs.io/notes/contributing.html#pull-requests about how we handle PRs.
+    
+    Before submitting a PR, please run `dev/linter.sh` to lint the code.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3459
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30802143
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: a820fa521d9e54c32d4af614ea48df3207dc6515
+
+[33mcommit e9cbe90212102d9a2538559b673b66cb98644a6a[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Sep 8 10:57:34 2021 -0700
+
+    add a scriptable ResizeShortestEdge.get_output_shape
+    
+    Summary: this function alone is useful in deployment
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30801733
+    
+    fbshipit-source-id: 792f8ca016f2c6782fc25c9bbaa302588597d087
+
+[33mcommit 23486b6f503490d8c526d206eb057ec33615f2de[m
+Author: Lydia Chan <lydiachan@fb.com>
+Date:   Thu Sep 2 13:46:12 2021 -0700
+
+    Increase limit on number of detections per image in {COCO,LVIS}Evaluator
+    
+    Summary:
+    ## Context
+    - The current limit on the number of detections per image (`K`) in LVIS is 300.
+    - Implementing AP_pool/AP_fixed requires removing this default limit on `K`
+    - [Literature](https://arxiv.org/pdf/2102.01066.pdf) has shown that increasing `K` correlates with AP gains
+    
+    ## This Diff
+    - Changed limit on number of detections per image (`K`) to be customizable for LVIS and COCO through `TEST.DETECTIONS_PER_IMAGE` in the config
+       - For COCO:
+           - Maintain the default `max_dets_per_image` to be [1, 10, 100] as from [COCOEval](https://www.internalfb.com/code/fbsource/[88bb57c3054a]/fbcode/deeplearning/projects/cocoApi/PythonAPI/pycocotools/cocoeval.py?lines=28-29)
+           - Allow users to input a custom integer for `TEST.DETECTIONS_PER_IMAGE` in the config, and use  [1, 10, `TEST.DETECTIONS_PER_IMAGE`] for COCOEval
+       - For LVIS:
+           - Maintain the default `max_dets_per_image` to be 300 as from [LVISEval](https://www.internalfb.com/code/fbsource/[f6b86d023721]/fbcode/deeplearning/projects/lvisApi/lvis/eval.py?lines=528-529)
+           - Allow users to input a custom integer for `TEST.DETECTIONS_PER_IMAGE` in the config, and use this in LVISEval
+    - Added `COCOevalMaxDets` for evaluating AP with the custom limit on number of detections per image (since default `COCOeval` uses 100 as limit on detections per image for evaluating AP)
+    
+    ## Inference Runs using this Diff
+    - Performed inference using `K = {300, 1000, 10000, 100000}`
+    - Launched fblearner flows for object detector baseline models with N1055536 (LVIS) and N1055756 (COCO)
+      - Recorded [results of running inference](https://docs.google.com/spreadsheets/d/1rgdjN2KvxcYfKCkGUC4tMw0XQJ5oZL0dwjOIh84YRg8/edit?usp=sharing)
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30077359
+    
+    fbshipit-source-id: 372eb5e0d7c228fb77fe23bf80d53597ec66287b
+
+[33mcommit 55c0078b1ffa6fca21834db7b3cf85c48d66109d[m
+Author: Peter Bull <pjbull@gmail.com>
+Date:   Wed Sep 1 17:07:09 2021 -0700
+
+    Make vis module importable, remove required torch and torchvision
+    
+    Summary:
+    In PR https://github.com/facebookresearch/detectron2/issues/3311 we made densepose a pip-installable Python package. However, we forgot to include an `__init__.py` so that the `vis` module is importable. This PR adds that `__init__.py`.
+    
+    It was also mentioned in that PR that there is a preference not to require torch and torchvision requirements versions:
+    https://github.com/facebookresearch/detectron2/pull/3311#issuecomment-892513481
+    
+    This PR also removes those requirements from the `setup.py` and lists them instead in the prerequisites in the documentation.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3382
+    
+    Reviewed By: patricklabatut
+    
+    Differential Revision: D30462761
+    
+    Pulled By: vkhalidov
+    
+    fbshipit-source-id: e58985ff24cc75ff1d7905a863fa040e3be99bc3
+
+[33mcommit faf658710d5a6580b4c748b1a3e8ed621524aba1[m
+Author: Jon Morton <jamorton@fb.com>
+Date:   Tue Aug 31 17:29:48 2021 -0700
+
+    Update mmdetection to latest github master
+    
+    Summary:
+    Wanted to use some of the latest additions to mmdetection; in particular, the UniformAssignment from YOLOF (Free box AP win, even in two stage models!).
+    
+    I just cloned latest mmdetection and copied into `deeplearning/projects/third_party/mmdetection`.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30598178
+    
+    fbshipit-source-id: 05fc559534a2fde41b36fc8c088c4e5c1729e7a2
+
+[33mcommit cbbc1ce26473cb2a5cc8f58e8ada9ae14cb41052[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 30 13:34:23 2021 -0700
+
+    add __len__ for ToIterableDataset
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30635073
+    
+    fbshipit-source-id: 664ba17b768a69fed97ca94b944e43d186336966
+
+[33mcommit ea3b3f22bf1de58008599794f149149ff65d3780[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Aug 27 16:56:05 2021 -0700
+
+    add python 3.9 to CircleCI
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3410
+    
+    avoid bugs like the last diff
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30599205
+    
+    fbshipit-source-id: 3b2abd2885d384bd3f2a29b454d3da5e023e01a3
+
+[33mcommit b9d83a37db913caebe6f818adf2e1293d7aadcfc[m
+Author: Harish S.G <harishsg99@gmail.com>
+Date:   Fri Aug 27 15:27:19 2021 -0700
+
+    Always detach tensor in visualization
+    
+    Summary:
+    Thanks for your contribution!.
+    Fixed the following runtime Error : numpy() fails when visualizing an output element of a input batch during inference
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3400
+    
+    Reviewed By: jonmorton
+    
+    Differential Revision: D30560943
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: abe94a12b67a5c8bad2a60fff989072f99b70d16
+
+[33mcommit d67c7f32e7bc94a3a588848824131a0191546240[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Aug 27 15:22:00 2021 -0700
+
+    fix linter
+    
+    Summary: run ./dev/linter.sh
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30599861
+    
+    fbshipit-source-id: 8957443bb1ca9e143ca11a2e2675b8513ed63d16
+
+[33mcommit 01120e438cb49ec2c15da81fa2784ec253ace59b[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Aug 27 13:36:10 2021 -0700
+
+    fix MapDataset creation in python 3.9
+    
+    Summary:
+    fix https://github.com/facebookresearch/detectron2/issues/3405
+    
+    The old code works for python 3.6 & 3.7; fails for python 3.9
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30599139
+    
+    fbshipit-source-id: ab9e5d68387b68e1095112e9c2531a971567accc
+
+[33mcommit 11528ce083dc9ff83ee3a8f9086a1ef54d2a402f[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Aug 25 21:50:26 2021 -0700
+
+    remove FastRCNNOutputs
+    
+    Summary: it has been deprecated for 1 year. moving to internal
+    
+    Reviewed By: jonmorton
+    
+    Differential Revision: D25876263
+    
+    fbshipit-source-id: 2ee8cab3b25b66664792578bb40194d813208f2e
+
+[33mcommit 05bc8439ca10e11300d9d34e4fe0dd1d3f42773a[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Aug 25 12:57:08 2021 -0700
+
+    support IterableDataset in build_detection_train_loader
+    
+    Differential Revision: D24677397
+    
+    fbshipit-source-id: 1e4a991c521da1e139ccc7fe40b715dc921d3294
+
+[33mcommit 2a345c16ac834c83cfa99a9d4e90e701126597f4[m
+Author: Pyre Bot Jr <>
+Date:   Tue Aug 24 11:22:11 2021 -0700
+
+    suppress errors in `fbcode/vision` - batch 1
+    
+    Differential Revision: D30514760
+    
+    fbshipit-source-id: f80b301ae5ea779588a9d634c1baa35f8f2d3e99
+
+[33mcommit fe4d35b0a8b6b37d45162a68f82e73f4bf7b1ba1[m
+Author: levan92 <lingevan0208@gmail.com>
+Date:   Tue Aug 24 01:02:18 2021 -0700
+
+    Best Checkpointing Hook
+    
+    Summary:
+    Implemented hook for saving best model, as discussed in https://github.com/facebookresearch/detectron2/issues/2114
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3222
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D29764303
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: b5cb42b34a15ea151cce8fe992a9f35a964a6afe
+
+[33mcommit 6e7def97f723bedd25ad6d2aa788802bf982c72c[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Aug 24 01:01:40 2021 -0700
+
+    allow torchscript tests to run on CPUs
+    
+    Summary: close T88689498
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D30063379
+    
+    fbshipit-source-id: 23cddad66c17857f96bd60f59cf9f67291aedfff
+
+[33mcommit ff638c931d5999f29c22c1d46a3023e67a5ae6a1[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 18:52:51 2021 -0700
+
+    use OmegaConf.select in omegaconf2.1
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D29738743
+    
+    fbshipit-source-id: 08b49cabe5c1c43478418600e3f0076e443d2e22
+
+[33mcommit 2413859fda93a17581e6e9c17062990c1a87a0b0[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 16:21:23 2021 -0700
+
+    raise clear error message for mismatched keypoint metadata
+    
+    Summary:
+    The error message in https://github.com/facebookresearch/detectron2/issues/3341
+    is not informative
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D30185963
+    
+    fbshipit-source-id: 11fda5e6e22851942b5da9df09b6ec4e315eddef
+
+[33mcommit 2538c9d1b1f86db507d114b4c7e06a04c828fbc4[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 16:20:03 2021 -0700
+
+    check for errors in SemSegFPNHead
+    
+    Summary: close https://github.com/facebookresearch/detectron2/issues/3316
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D30062593
+    
+    fbshipit-source-id: e8b614c21f62012e081f425dd9df850179f1f2a7
+
+[33mcommit dbe2c9c5e77541d956a1b31ced629b6bb610aafc[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 12:55:40 2021 -0700
+
+    fix support for empty annotations
+    
+    Summary: fix https://github.com/facebookresearch/detectron2/issues/3401
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D30491149
+    
+    fbshipit-source-id: 0af0d850afcb4aa451da2975aa46c4c854138523
+
+[33mcommit 2866c4381a608a4be711293e443b61fcfe49de46[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 12:35:55 2021 -0700
+
+    Add linear box2box transform and pairwise distance
+    
+    Summary: both used in FCOS
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D30470063
+    
+    fbshipit-source-id: 495494a669acd9f706c3845551252ced4acc9888
+
+[33mcommit d7848aa71a74c9aa2316537c24ae0ed8731faeb8[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 12:20:21 2021 -0700
+
+    stop using docker in circleci
+    
+    Summary: see context in T88568338
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D30063970
+    
+    fbshipit-source-id: 1ad0ac0dfb72a6c7aba6e4263724550e4042c664
+
+[33mcommit 93cfe425a7ddc35072b313ef5599848ce9c689ce[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 12:19:16 2021 -0700
+
+    scripting support for C4 models
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3318
+    
+    Just add some typing.
+    
+    fix https://github.com/facebookresearch/detectron2/issues/3302
+    
+    Reviewed By: zhanghang1989, wat3rBro
+    
+    Differential Revision: D30062501
+    
+    fbshipit-source-id: c1f2a3cb42f8ee11d5e8c582fc5b8f5464c438d0
+
+[33mcommit f327aac84dbfe143a627b67f31950d5d4472d16a[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Aug 23 10:18:42 2021 -0700
+
+    let MapDataset support iterable
+    
+    Summary:
+    Most production use cases needs error handling.
+    This is not available in pytorch's `.map()`.
+    
+    This is useful as we move towards using more IterableDataset
+    
+    Differential Revision: D30123656
+    
+    fbshipit-source-id: 17c4caa3e4ed18c1b073bbfe8309ca3b3681a59b
+
+[33mcommit de6416be86155111e05ee102702c55470f7450c6[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Aug 19 13:18:42 2021 -0700
+
+    rename matched_boxlist_iou -> matched_pairwise_iou
+    
+    Summary:
+    The naming "boxlist" comes from maskrcnn-benchmark. This functions is created when pairwise_iou is
+    called `boxlist_iou`.
+    
+    Rename it to follow a consistent naming.
+    
+    Reviewed By: jonmorton
+    
+    Differential Revision: D30428372
+    
+    fbshipit-source-id: be73f5acb1c6a5a2266c2b7706394b1f84f23479
+
+[33mcommit dba3eece1a08345b76553d44be4286edbfa9d560[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Aug 18 23:31:12 2021 -0700
+
+    avoid list[ndarray] -> tensor conversion in Boxes
+    
+    Summary:
+    avoid wanings like:
+    ```
+    detectron2/structures/boxes.py:158: UserWarning: Creating a tensor from a list
+    of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray
+    with numpy.array() before converting to a tensor. (Triggered internally at torch/csrc/utils/tensor_new.cpp:201.)
+    ```
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D30172338
+    
+    fbshipit-source-id: fbe044fead72722b3c6eb9916faa2a7dca3e6eae
+
+[33mcommit 7825f076c28103933d6424ecf2caaad59943c5d5[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Aug 11 16:37:01 2021 -0700
+
+    fix check of multinode
+    
+    Summary: rank is 0-based
+    
+    Reviewed By: bowenc0221
+    
+    Differential Revision: D30258674
+    
+    fbshipit-source-id: 1e8331e303fdcce8c96c500e520ffadc000f06ba
+
+[33mcommit 42286d3c8bf7f261ec2112a4d7ac456e7869c48e[m
+Author: Kai Zhang <kaizh@fb.com>
+Date:   Wed Aug 11 11:52:01 2021 -0700
+
+    Use current device id in dist.barrier
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3350
+    
+    `get_local_rank` relies on a global variable set by Detectron2's `launch` utils.
+    Since other frameworks might use Detectron2's distribute utils but don't launch with Detectron2's `launch` utils. Use `torch.cuda.current_device` to get the current device instead.
+    
+    Reviewed By: HarounH, ppwwyyxx
+    
+    Differential Revision: D30233746
+    
+    fbshipit-source-id: 0b140ed5c1e7cd87ccf05235127f338ffc40a53d
+
+[33mcommit 3924daf2066640da7cb76ec1504202a2e0080ecc[m
+Author: Carolyn Soo <carolynsoo@fb.com>
+Date:   Tue Aug 10 13:53:54 2021 -0700
+
+    Expose stats_mode N for NaiveSyncBN
+    
+    Summary:
+    * Current code does not enable user to choose stats_mode="N" for naiveSyncBN. This change exposes that.
+      - stats_mode="N" is necessary for supporting zero-length inputs. Without it:  `SyncBatchNorm(stats_mode="") does not support zero batch size.`
+    
+    ------------------------
+    
+    Reviewed By: jonmorton, vaibhava0, ppwwyyxx
+    
+    Differential Revision: D29362934
+    
+    fbshipit-source-id: f8d5a33cac599f706e6620c31495e8c1577970dc
+
+[33mcommit fefb626754e658501e82bc3aeb29cf909a202779[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Aug 10 10:41:50 2021 -0700
+
+    fix for pytorch1.7
+    
+    Reviewed By: alexander-kirillov, bowenc0221
+    
+    Differential Revision: D30215015
+    
+    fbshipit-source-id: 90c6a791c23f4edacdc7e7a95b41586582e8da93
+
+[33mcommit ace739af984a8c858d6f42f22fcab980b7437b80[m
+Author: Zhipeng Fan <zhipengfan@fb.com>
+Date:   Tue Aug 10 01:19:07 2021 -0700
+
+    cat Keypoints
+    
+    Summary: Add cat methods to Keypoints
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30199199
+    
+    fbshipit-source-id: 7d2c63810e7e05931c90b7ea5102a734b7ce8af4
+
+[33mcommit 0fb7f0432aa4f9e50360402f59bace32356d7c58[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Aug 5 16:51:11 2021 -0700
+
+    fix copyright headers
+    
+    Summary: close T85305354
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D30063498
+    
+    fbshipit-source-id: 251a0700d92071bcb1f9eea1e8bc736119ab552a
+
+[33mcommit 8bdde383d69a042b0cb6ee8ab7bb7e22d8ce3ef7[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Aug 5 16:51:11 2021 -0700
+
+    remove warnings about cell_anchors
+    
+    Summary: close https://github.com/facebookresearch/detectron2/issues/3313
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D30062746
+    
+    fbshipit-source-id: ed548c2b0513933a1071364ac4824f5346675918
+
+[33mcommit b669a88fd174decf9b5a2b3e34e0d8305eaabd4b[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Aug 5 00:54:43 2021 -0700
+
+    test opencv exif reading
+    
+    Differential Revision: D26773548
+    
+    fbshipit-source-id: 94bdd659b2bf35235de411795f20d6cd8f045fa4
+
+[33mcommit 64e84c5b7231ad626042a49c83983c2c82080fc5[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Aug 4 20:08:01 2021 -0700
+
+    avoid warnings of NCCL
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3322
+    
+    avoid warnings like the following:
+    ```
+    [W ProcessGroupNCCL.cpp:1569] Rank 0 using best-guess GPU 0 to perform barrier as devices used by
+    this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is
+    incorrect. Specify device_ids in barrier() to force use of a particular device.
+    ```
+    
+    maybe can fix the hang in https://github.com/facebookresearch/detectron2/issues/3319
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D30077957
+    
+    fbshipit-source-id: b8827e66c5eecc06b650acde2e7ff44106327f69
+
+[33mcommit a7e86f5275cb5178118b2999624b429ea30c848b[m
+Author: Valentin Andrei <vandrei@fb.com>
+Date:   Wed Aug 4 13:38:32 2021 -0700
+
+    Added hook that prints detailed pytorch memory stats
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D30076586
+    
+    fbshipit-source-id: 72017b55bc99d6dab2b11b663cd7da98b814b544
+
+[33mcommit f410d5b26cbf24998be250649dc73fdc57eb307e[m
+Author: Fu-Chen Chen <fuchen@fb.com>
+Date:   Wed Aug 4 13:04:44 2021 -0700
+
+    RandomSubsetTrainingSampler to randomly sample training data subset for accuracy-data curve
+    
+    Summary:
+    Add a sampler class `RandomSubsetTrainingSampler`, which is similar to TrainingSampler but only sample a random subset (e.g., 50%) of indices.
+    `RandomSubsetTrainingSampler` is useful when you want to estimate the accuracy vs data-volume curves by training the model with different `subset_ratio`.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29892290
+    
+    fbshipit-source-id: a342a6f1aa7852feb6566c648bd673028a3e0668
+
+[33mcommit 91f1d953bf6db991315fea310628f040ac5299f2[m
+Author: Peter Bull <pjbull@gmail.com>
+Date:   Wed Aug 4 02:42:38 2021 -0700
+
+    Package DensePose project
+    
+    Summary:
+    Make DensePose installable as a Python package.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3311
+    
+    Test Plan:
+    ```
+    $ pip install git+https://github.com/drivendataorg/detectron2@densepose-add-setup-py#subdirectory=projects/DensePose
+    ```
+    
+    Reviewed By: vkhalidov
+    
+    Differential Revision: D30046303
+    
+    Pulled By: patricklabatut
+    
+    fbshipit-source-id: 836cb4ad714da8a45601ac9a90342f8e443b180e
+
+[33mcommit f1401008ee852d25c4ff04f6a9a88176815045a4[m
+Author: Pyre Bot Jr <>
+Date:   Tue Aug 3 10:11:15 2021 -0700
+
+    suppress errors in `fbcode/vision` - batch 1
+    
+    Differential Revision: D30071810
+    
+    fbshipit-source-id: c37e3a73835e5a1a2d23b29226591c1f8d4c8fe0
+
+[33mcommit 9eb0027d795bb9a38098bb05e2ceb273bfc9cf41[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Jul 29 11:53:11 2021 -0700
+
+    update docs
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D29991903
+    
+    fbshipit-source-id: ecc916263d544e570550469b7a856ce274696dfe
+
+[33mcommit 52c81d75817814d66b275313c0325abfcec0a8ca[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Jul 28 17:35:08 2021 -0700
+
+    sharding & docs on samplers
+    
+    Summary: a sharding util & docs & update tests
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29914875
+    
+    fbshipit-source-id: d1cb4a345c89e3c89cde29debe4c5850a667ce05
+
+[33mcommit f190b6f5de4d2f92f202ea162d018f826e9d6ecc[m
+Author: Cheng-Yang Fu <chengyangfu@fb.com>
+Date:   Tue Jul 27 21:33:14 2021 -0700
+
+    Update transform_instance_annotations to match the original function.
+    
+    Summary:
+    update the transform_instance_annotations function to match the original version.
+    - The current version will cause troubles when training with person keypoints.
+    
+    Reviewed By: alexander-kirillov
+    
+    Differential Revision: D29870068
+    
+    fbshipit-source-id: 5e41efbaef0632577821f28484c24132a2187a30
+
+[33mcommit bb8b293c456c43b1745b9a49725eeed3bb965dc6[m
+Author: Alexander Kirillov <alexander.n.kirillov@gmail.com>
+Date:   Mon Jul 26 23:01:07 2021 -0700
+
+    add extra_annotation_keys parameter to lvis json loader
+    
+    Summary:
+    Thanks for your contribution!
+    
+    If you're sending a large PR (e.g., >100 lines),
+    please open an issue first about the feature / bug, and indicate how you want to contribute.
+    
+    We do not always accept features.
+    See https://detectron2.readthedocs.io/notes/contributing.html#pull-requests about how we handle PRs.
+    
+    Before submitting a PR, please run `dev/linter.sh` to lint the code.
+    
+    Pull Request resolved: https://github.com/fairinternal/detectron2/pull/556
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29925800
+    
+    Pulled By: alexander-kirillov
+    
+    fbshipit-source-id: 8e8b7452da98d73f2fd6a7f936658cfcb9ed98f4
+
+[33mcommit 5b53d8a23ca6721ccf0a3d06e54e92589fd9ba24[m
+Author: Eric Mintun <mintun@fb.com>
+Date:   Mon Jul 26 13:55:05 2021 -0700
+
+    Sample single scale per GPU in LSJ data augmentation.
+    
+    Summary:
+    Code for sampling only one scale per minibatch in the LSJ data augmentation. `dataloader.train.mode` can be set to `per_image` to sample a separate scale for every image, `per_gpu` to sample a scale for each GPU in each minibatch, or `per_batch` to sample a single scale across all GPUs for each minibatch. Padding up to 1024x1024 is removed so that small scales can run faster.
+    
+    The implementation follows that from [A Multigrid Method for Efficiently Training Video Models](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_A_Multigrid_Method_for_Efficiently_Training_Video_Models_CVPR_2020_paper.pdf]): the batch sampler samples scales in the desired mode, then for each image returns a tuple `(index, scale)`. The dataset's `__getitem__` is modified to take such a tuple as input instead of just an index.
+    
+    When sampled this way:
+    1) Padding is slightly different; it is done by the model (as is true for non-LSJ data augmentation) and not the augmentation. This means padding occurs after horizontal flipping instead of before, and uses a slightly different value (0.0 after normalization, instead of 128 before normalization).
+    
+    2) Grouping by aspect ratio is turned off, since it is now detrimental.
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29506785
+    
+    fbshipit-source-id: b252f21668f1508618d127133b64e28b17f48fd6
+
+[33mcommit 0954ef32ef850e6435e3f5c2051c19f50ccb74db[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Fri Jul 23 15:37:09 2021 -0700
+
+    more detailed dataloader benchmark
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D29766279
+    
+    fbshipit-source-id: d1481523a468cc8d42a133cfc769b182c9d71f10
+
+[33mcommit 82a57ce0b70057685962b352535147d9a8118578[m
+Author: Yuxin Wu <ppwwyyxx@users.noreply.github.com>
+Date:   Fri Jul 23 09:25:54 2021 -0700
+
+    0.5 release
+    
+    Summary:
+    close https://github.com/facebookresearch/detectron2/issues/3158
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3266
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D29837548
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 08c6341f038117667510e90b1e2a29d64fd38c13
+
+[33mcommit 40f8cffa7eb997a8a1fff71bfae728fabce8b20a[m
+Author: Alexander Kirillov <akirillov@fb.com>
+Date:   Thu Jul 22 13:10:23 2021 -0700
+
+    register annotation file with points internally
+    
+    Summary: make point supervision compatible with internal dataset file system.
+    
+    Differential Revision: D29629927
+    
+    fbshipit-source-id: 5646645d118ac82816269b7a16d2328efccaf183
+
+[33mcommit 5b1d1a81bf4f03346a4effe0bc34a53a7d82ad35[m
+Author: Pyre Bot Jr <>
+Date:   Wed Jul 21 16:05:55 2021 -0700
+
+    suppress errors in `fbcode/vision` - batch 1
+    
+    Differential Revision: D29827499
+    
+    fbshipit-source-id: b67ea1050ba6ab9998e20741a69c194cf767108d
+
+[33mcommit 8b0953c0dbae0bc48d4f244c25f310cf8ebfbf78[m
+Author: Yuxin Wu <ppwwyyxxc@gmail.com>
+Date:   Tue Jul 20 18:12:59 2021 -0700
+
+    docs about LazyConfig
+    
+    Summary:
+    fix https://github.com/facebookresearch/detectron2/issues/3225
+    
+    Pull Request resolved: https://github.com/fairinternal/detectron2/pull/553
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D29731838
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: 69ed27681747cf00a2fa682c245369c3d1ee8945
+
+[33mcommit 729227ffed7c42b258cd78e67015c6c6c4bf98d0[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Jul 20 15:18:38 2021 -0700
+
+    correct error messages in TracingAdapter(allow_non_tensor=True)
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3235
+    
+    tuple comparison using "!=" does not work when (1) tuple contains tensors AND (2) the tensors are not the same object
+    
+    change to compare each element.
+    
+    This prevents the error message in https://github.com/facebookresearch/detectron2/issues/3234
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D29626855
+    
+    fbshipit-source-id: 16d8a1faf8f6712eef9989d1226dc7d964d28375
+
+[33mcommit 66d658de02a2579d9516a72d94e98a394e2f0ccf[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Mon Jul 19 08:22:56 2021 -0700
+
+    fix pointsup docs
+    
+    Reviewed By: bowenc0221
+    
+    Differential Revision: D29761723
+    
+    fbshipit-source-id: c0336e8c7a72a6168ebf6a8db42d52ed5787a49d
+
+[33mcommit b41796ba3042dea5a7750936f8c538307991183f[m
+Author: Cheng-Yang Fu <chengyangfu@fb.com>
+Date:   Fri Jul 16 18:43:01 2021 -0700
+
+    Remove the sanity check of gt_masks in PointSup.
+    
+    Summary:
+    Remove the assert of `gt_masks` in PointSup.
+    - The assertion limits the usages of this function. It will cause the issue in the mixed-training setting. To serve other use cases, the assertion is removed.
+    
+    Reviewed By: bowenc0221
+    
+    Differential Revision: D29626148
+    
+    fbshipit-source-id: 250f74f51fbc4971065bf15d03fea661f50fc9d1
+
+[33mcommit a406e69f6687b9e3923db31bfda89c339e0a81c4[m
+Author: Bowen Cheng <bowenc0221@gmail.com>
+Date:   Wed Jul 14 15:50:13 2021 -0700
+
+    add MaskFormer link to projects
+    
+    Summary:
+    Thanks for your contribution!
+    
+    If you're sending a large PR (e.g., >100 lines),
+    please open an issue first about the feature / bug, and indicate how you want to contribute.
+    
+    We do not always accept features.
+    See https://detectron2.readthedocs.io/notes/contributing.html#pull-requests about how we handle PRs.
+    
+    Before submitting a PR, please run `dev/linter.sh` to lint the code.
+    
+    Pull Request resolved: https://github.com/fairinternal/detectron2/pull/550
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29689696
+    
+    Pulled By: alexander-kirillov
+    
+    fbshipit-source-id: d9c88f09580e899c475c831e1d2d8e5851ba5508
+
+[33mcommit bf358d61a8949d0cc815249f3f1d4b1d45cd11a0[m
+Author: Dave Schnizlein <dschnizlein@fb.com>
+Date:   Mon Jul 12 07:16:47 2021 -0700
+
+    Implement lightning_train_net
+    
+    Summary:
+    Implementing a lightning trainer for use in Detectron2.
+    
+    First goal is to replicate existing results.
+    
+    Next is to change functionality to use base lightning instead of D2 (https://github.com/facebookresearch/detectron2/commit/76ec0a2042f742bd8a16dfc81d76d42e24e96792) specific classes (logging, checkpointing etc.).
+    
+    Reviewed By: kazhang
+    
+    Differential Revision: D26266465
+    
+    fbshipit-source-id: 4fc62f8fa0468744ce380c65480e698243d52d47
+
+[33mcommit 76ec0a2042f742bd8a16dfc81d76d42e24e96792[m
+Author: Aaron Lou <aaronlou@fb.com>
+Date:   Fri Jul 9 14:59:36 2021 -0700
+
+    Added pytorch 1.8 profiler as hook with tensorboard visualization.
+    
+    Summary: Added a new hook with uses pytorch's new profiler (in versions 1.8.1+) to better log and visualize training details. In particular, this new hook includes the ability to use tensorboard visualizations when compared to the previous Autograd Hook.
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29624951
+    
+    fbshipit-source-id: 26e2b9cecf85ae2c545dc15a8103d6e1d983a94a
+
+[33mcommit 87e9946beb924e27ee80dc211aa79c9462bcd69a[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Jul 8 08:34:04 2021 -0700
+
+    fix open source CI
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3230
+    
+    this is not an important test, so just skip it
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29603967
+    
+    fbshipit-source-id: 04c7e89f346bdcd7d3aac4d68abd90415a336a41
+
+[33mcommit 03c70397ace4f03d85e99ce0241f852f65d1eb16[m
+Author: cwognum <caswognum@hotmail.com>
+Date:   Wed Jul 7 18:04:48 2021 -0700
+
+    Added the mapping from config to model checkpoint for the new baselines
+    
+    Summary:
+    Related to https://github.com/facebookresearch/detectron2/issues/3225, but does **not** solve it.
+    
+    # Overview of changes
+    FAIR recently published new [Mask R-CNN baselines](https://ai.facebook.com/blog/advancing-computer-vision-research-with-new-detectron2-mask-r-cnn-baselines/). The new config files have not yet been mapped to the corresponding model checkpoint files in the `model_zoo._ModelZooUrls` class. This was a relatively easy fix that simply follows the table given in the [MODEL_ZOO table](https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md#new-baselines-using-large-scale-jitter-and-longer-training-schedule). If we run the following code snippet below:
+    ```python
+    from detectron2 import model_zoo
+    model = model_zoo.get("new_baselines/mask_rcnn_regnetx_4gf_dds_FPN_400ep_LSJ.py", trained=True)
+    ```
+    
+    This used to give:
+    ```
+    RuntimeError: new_baselines/mask_rcnn_regnetx_4gf_dds_FPN_400ep_LSJ not available in Model Zoo!
+    ```
+    
+    With these new changes, we get what we would expect and actually download and load the model:
+    ```
+    model_final_f1362d.pkl: 173MB [01:13, 2.37MB/s]
+    The checkpoint state_dict contains keys that are not used by the model:
+      proposal_generator.anchor_generator.cell_anchors.{0, 1, 2, 3, 4}
+    ```
+    
+    I am not entirely sure whether the warning is expected or something that requires fixing.
+    
+    # Additional proposal
+    I personally am not a big fan of the naming. "new_baslines" seems too general to me and deviates from the already established naming conventions. This makes it less intuitive and not very robust to future updates. I would suggest moving the configs to `configs/COCO-InstanceSegmentation`. Similarly, I would then also move the checkpoint files accordingly to `https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/`. I did not implement these changes yet because I cannot change where the model files are stored and because I can imagine there to be an internal motivation not to change the naming anymore.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3228
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29590936
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: ffebeff845acfa2d9beb6d0e5472ff8670fbb457
+
+[33mcommit 6e9dedacbe46816e0ec806e4fa7e975ece3306dd[m
+Author: Sam Tsai <sstsai@fb.com>
+Date:   Wed Jul 7 18:04:41 2021 -0700
+
+    fix test dataset loading with proposal enabled
+    
+    Summary: D28902673 (https://github.com/facebookresearch/detectron2/commit/60fd4885d7cfd52d4267d1da9ebb6b2b9a3fc937) changed the dataset name type while load proposals were still expecting single item inputs.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29601287
+    
+    fbshipit-source-id: f5bc18da951901220d79df87fad2b71c03432d38
+
+[33mcommit bb44e10a93d3c136760d6d31d387f600429e1c61[m
+Author: Konwoo Kim <konwook@fb.com>
+Date:   Tue Jul 6 17:01:19 2021 -0700
+
+    D2 Instance Utility Change
+    
+    Summary: Adds option for returning indexing of filtered instances. Used in MaskTrackRCNN implementation (D29564369) when computing ground truth and reference instance ids.
+    
+    Reviewed By: ppwwyyxx, weiyaowang
+    
+    Differential Revision: D29178584
+    
+    fbshipit-source-id: 8fe20c3e0258608347b3a2391374cf58fadde85d
+
+[33mcommit a17b768895a1207c540e909225fa5a9389564927[m
+Author: Yuxin Wu <ppwwyyxxc@gmail.com>
+Date:   Thu Jul 1 17:42:03 2021 -0700
+
+    fix CircleCI tests
+    
+    Summary:
+    add tests for pytorch1.9
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3177
+    
+    Reviewed By: vaibhava0
+    
+    Differential Revision: D29350407
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: e2ab109c74c752fcc35fcd0d8c2f80b3ff1642d9
+
+[33mcommit 38344fd334789617117365fb0cad1b204f3228bf[m
+Author: Cheng-Yang Fu <chengyangfu@fb.com>
+Date:   Thu Jul 1 16:21:24 2021 -0700
+
+    Hotfix: change the way to import point_sup.
+    
+    Summary: Hotfix: change the way to import point_sup.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29502525
+    
+    fbshipit-source-id: 123dfa7ea31c24db02a7aa6bcadb8793541b748a
+
+[33mcommit 5d686809a2782e424f81bb5154e140bc0bb7db6f[m
+Author: Jerry Zhang <jerryzh@fb.com>
+Date:   Wed Jun 30 14:35:22 2021 -0700
+
+    Remove redundant quant/dequant in GenrealizedRCNN
+    
+    Summary: Removed quant/dequant between backbone and proposal generator, and roi_box_conv and the following avg_pool
+    
+    Reviewed By: wat3rBro
+    
+    Differential Revision: D29383036
+    
+    fbshipit-source-id: ef07b3d1997b1fc7f92bcd9201523e9071510a8b
+
+[33mcommit c5eb1f7f3cd12537f53473eb730a47264a0deaf8[m
+Author: Cheng-Yang Fu <chengyangfu@fb.com>
+Date:   Tue Jun 29 19:50:13 2021 -0700
+
+    Make the mask_accuracy calculation more robust in PointSup.
+    
+    Summary:
+    Make the mask_accuracy calculation more robust in PointSup.
+    - The original version may cause weird issues in some corner cases.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29474348
+    
+    fbshipit-source-id: 7eb7a60722b52214ccb14ac4ee2e2eeaa1d02d9b
+
+[33mcommit d476937bd2923b3cf03cdb270ada7e757f8c0f44[m
+Author: Yingcheng Liu <liuyc@mit.edu>
+Date:   Tue Jun 29 11:13:03 2021 -0700
+
+    Remove duplicate flake8 ignore config
+    
+    Summary:
+    Hi, thanks a lot for sharing this amazing project. While I was reading the code, I found there is a duplicate flake8 ignore config. This PR is to remove the duplicate item. Thanks.
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3132
+    
+    Reviewed By: theschnitz
+    
+    Differential Revision: D29349703
+    
+    Pulled By: ppwwyyxx
+    
+    fbshipit-source-id: e2047647c360482047051579e5d855597eba573a
+
+[33mcommit 2cc9827a084449d8cb2f3919656efd33af78eaf0[m
+Author: Pyre Bot Jr <>
+Date:   Tue Jun 29 10:30:27 2021 -0700
+
+    suppress errors in `fbcode/vision` - batch 1
+    
+    Differential Revision: D29458436
+    
+    fbshipit-source-id: f549cdf25661e63b93eef46b519e1d27909e283b
+
+[33mcommit f62c5492732f75edf5fbf3606bbd322251f909cf[m
+Author: Pyre Bot Jr <>
+Date:   Tue Jun 29 00:27:45 2021 -0700
+
+    suppress errors in `vision/fair/detectron2/projects/DensePose`
+    
+    Differential Revision: D29450526
+    
+    fbshipit-source-id: ad8a4866272afd946d43f7fcb3eb448c87449bc7
+
+[33mcommit 4847f24829f7243f2c244a18644d018a29cca0f7[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Sun Jun 27 14:05:24 2021 -0700
+
+    enable flop printing & logging at the beginning of train & test
+    
+    Reviewed By: zhanghang1989
+    
+    Differential Revision: D29379832
+    
+    fbshipit-source-id: 9283a8796a1dbee81b51611407c22f7d5a2069dc
+
+[33mcommit 61457a0178939ec8f7ce130fcb733a5a5d47df9f[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Jun 23 16:40:07 2021 -0700
+
+    drop pytorch1.6 support & add pytorch1.9 CI
+    
+    Summary: Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3176
+    
+    Reviewed By: theschnitz
+    
+    Differential Revision: D28491153
+    
+    fbshipit-source-id: f8f08e6b74983029a580165b1fa6405d11dfd8f7
+
+[33mcommit c68491acd5e8de57a86b34604ba849c6d55f454b[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Wed Jun 23 12:55:32 2021 -0700
+
+    add unittest for default_setup
+    
+    Reviewed By: theschnitz
+    
+    Differential Revision: D28465545
+    
+    fbshipit-source-id: ed427fc20250730c413df83a3e4780cad0fdc9bf
+
+[33mcommit 1ef6735e427a35f7d2e0783bcacbce5fa86d4095[m
+Author: Vaibhav Aggarwal <vaibhava@fb.com>
+Date:   Wed Jun 23 00:09:33 2021 -0700
+
+    Fix ResNet101 naming in the Model Zoo.
+    
+    Summary:
+    Pull Request resolved: https://github.com/fairinternal/detectron2/pull/548
+    
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3172
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29321232
+    
+    fbshipit-source-id: ac1f3af832ca59408c43c7b9d07f39315563ac32
+
+[33mcommit 3a754ed197e0b5987325db3cdd1cb0d1ae775d0e[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Mon Jun 21 14:10:29 2021 -0700
+
+    sample from top confidences, not bottom
+    
+    Summary: Sampling should be performed from pixels with the highest confidence, not the lowest.
+    
+    Reviewed By: MarcSzafraniec
+    
+    Differential Revision: D28095922
+    
+    fbshipit-source-id: 8c9684fac4c07d37e34ab42aa8b3ff7b191e9e6f
+
+[33mcommit 49e176edad6ee16a35b07e2fa35a140dd2e8f9c6[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Mon Jun 21 14:10:29 2021 -0700
+
+    CSE bootstrapping perform computations on GPU
+    
+    Summary: It's better to perform heavy operations with embeddings on GPU, not on CPU.
+    
+    Reviewed By: MarcSzafraniec
+    
+    Differential Revision: D28095282
+    
+    fbshipit-source-id: c0764e58d3fc1ded54129f5f3abee6028b5c8ef6
+
+[33mcommit bd004fd49472819dba0adf87989f4d627760fa43[m
+Author: Zhicheng Yan <zyan3@fb.com>
+Date:   Fri Jun 18 18:51:30 2021 -0700
+
+    do not reduce batch norm running var by eps
+    
+    Summary:
+    Currently, in `FrozenBatchNorm2d`, we implement to reduce running var by eps when version is smaller than 3 when loading checkpoint.
+    In Pytorch `BatchNorm2D` module, version is 2 (https://fburl.com/diffusion/lz7jhjcv).
+    Both `FrozenBatchNorm2d` and `BatchNorm2D` use `F.batch_norm` with the same eps argument to implement forward pass.
+    Therefore, we should NOT  reduce running var by eps when version is smaller than 3 when loading checkpoint.
+    Otherwise, when running var is close to zero in the checkpoint, it will incur NaN issue after we load checkpoint.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D29190708
+    
+    fbshipit-source-id: ddd98080ce9c108768d3a5a03e28522208196385
+
+[33mcommit d285dea0a58675217b061f48182dc031d2e3b677[m
+Author: Pyre Bot Jr <>
+Date:   Wed Jun 16 12:38:50 2021 -0700
+
+    suppress errors in `vision/fair/detectron2/projects/DensePose`
+    
+    Differential Revision: D29169622
+    
+    fbshipit-source-id: c8a322a3ef0cebc20b377046892f859131852644
+
+[33mcommit 60fd4885d7cfd52d4267d1da9ebb6b2b9a3fc937[m
+Author: Sam Tsai <sstsai@fb.com>
+Date:   Wed Jun 9 14:34:33 2021 -0700
+
+    allow for multiple datasets for test data loader creation
+    
+    Summary: Use all training dataset for export instead of just first. This is to support use cases where there is only a small amount of images per jsons but a number of jsons. Since calibration uses the first dataset, it is limited by the number of images in a single dataset.
+    
+    Reviewed By: ppwwyyxx
+    
+    Differential Revision: D28902673
+    
+    fbshipit-source-id: f80146b02d2d1bc04703fbb21ef410f5e26ba64c
+
+[33mcommit 6ba6206fbb08d66af028e50bd78013d206cd1693[m
+Author: Vaibhav Aggarwal <vaibhava@fb.com>
+Date:   Wed Jun 9 12:57:51 2021 -0700
+
+    Add new Instance Segmentation baselines to the Model Zoo.
+    
+    Summary:
+    Pull Request resolved: https://github.com/facebookresearch/detectron2/pull/3137
+    
+    Pull Request resolved: https://github.com/fairinternal/detectron2/pull/547
+    
+    Updated the configs to use step learning rate schedule.
+    
+    Reviewed By: rbgirshick
+    
+    Differential Revision: D28650772
+    
+    fbshipit-source-id: 80a0225587a867bb46e49e0dfeb77ccecbb16940
+
+[33mcommit 413d879a973f845ca5920167c4ab54676f145578[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Tue Jun 8 11:29:08 2021 -0700
+
+    bump version
+    
+    Summary:
+    for densepose release
+    
+    after landing, push a new tag
+    
+    Reviewed By: vkhalidov
+    
+    Differential Revision: D28964227
+    
+    fbshipit-source-id: e50470a247672dc5ddf9fbcc0895e9e6e0e964b1
+
+[33mcommit 6700d784ff69c800dbc50abed341b20f806bddd2[m
+Author: Eric Mintun <mintun@fb.com>
+Date:   Tue Jun 8 11:00:20 2021 -0700
+
+    Add 50ep R50 Mask RCNN training recipe to D2 new baselines
+    
+    Summary: Added a training recipe with a shorter training time, reducing `train.max_iter` using the same pattern used to length it for the recipes >100ep.
+    
+    Reviewed By: rbgirshick
+    
+    Differential Revision: D28935200
+    
+    fbshipit-source-id: 8423d125bc628885990a343cbb09a1a5f0d5a1b2
+
+[33mcommit df6eac1814e7182625640d9168e4308bd3a6a8f8[m
+Author: Yuxin Wu <yuxinwu@fb.com>
+Date:   Thu Jun 3 11:34:54 2021 -0700
+
+    update comments in classification example
+    
+    Summary: to avoid confusion
+    
+    Reviewed By: theschnitz
+    
+    Differential Revision: D28863092
+    
+    fbshipit-source-id: 2f5da6a12759649bda5e73a1159e2da7d3e45e44
+
+[33mcommit 374cdd31246ecf40b4b81d5b11b326894148caba[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Wed Jun 2 14:03:05 2021 -0700
+
+    added CVPR release notes
+    
+    Summary: Added release notes
+    
+    Reviewed By: patricklabatut
+    
+    Differential Revision: D28841327
+    
+    fbshipit-source-id: 87d3ca6a159c394541479a3234c567a70ab5ee1d
+
+[33mcommit 13afb035142734a309b20634dadbba0504d7eefe[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Fri May 28 19:51:32 2021 -0700
+
+    add CVPR models to the model zoo
+    
+    Summary: Added models trained with cycle losses to the model zoo.
+    
+    Reviewed By: patricklabatut
+    
+    Differential Revision: D28286366
+    
+    fbshipit-source-id: fd7c7204de4b2e01fae42dad2aefbfd89bac5d4f
+
+[33mcommit e3ee0ab08d55949c35101218652214be31c4e2aa[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Fri May 28 19:51:32 2021 -0700
+
+    add CVPR dataset to the doc
+    
+    Summary: Added LVIS dataset CVPR annotations description to the datasets doc.
+    
+    Reviewed By: patricklabatut
+    
+    Differential Revision: D28257722
+    
+    fbshipit-source-id: d339f3c6ac2a624c9cce4fd01119412cd1e29461
+
+[33mcommit 4c282acedb3b1803a037a85b63a0ba1f7abb1459[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Fri May 28 19:51:32 2021 -0700
+
+    add SMPL mesh to m2m cycle loss config
+    
+    Summary: The presence of SMPL mesh embeddings is important for M2M cycle loss. Added SMPL explicitly
+    
+    Reviewed By: patricklabatut
+    
+    Differential Revision: D28257529
+    
+    fbshipit-source-id: 61bd725d7adb4bf015bfdf757d401355f16f9460
+
+[33mcommit 93213d70c6d1d09fda47f3b47ebc4fb0a3676635[m
+Author: Vasil Khalidov <vkhalidov@fb.com>
+Date:   Fri May 28 19:51:32 2021 -0700
+
+    add CVPR model configs
+    
+    Summary: Added configs used to train models from the model zoo.
+    
+    Reviewed By: patricklabatut
+    
+    Differential Revision: D28225279
+    
+    fbshipit-source-id: 643e781a00384fabce1e3cbb8da1192cb79aaf4c
